@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .sliderContainer{
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+        .sliderContainer img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .animation{
+            animation-name: fadeInOut;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sliderContainer">
+        <img class="animation" src="images/police4.jpg" alt="">
+        <img class="img" src="images/police1.jpg" alt="">
+        <img class="img" src="images/police2.jpg" alt="">
+        <img class="img" src="images/police3.jpg" alt="">
+        <img class="img" src="images/police4.jpg" alt="">
+    </div>
+    <script>
+        const imgs = document.querySelectorAll(".sliderContainer .img");
+        const sliderImg = document.querySelector(".sliderContainer img.animation");
+        let currentImgIndex = 0;
+
+        function showImage() {
+            sliderImg.classList.remove("animation");
+
+            sliderImg.src = imgs[currentImgIndex].src;
+
+            sliderImg.offsetHeight;
+
+            sliderImg.classList.add("animation");
+
+            currentImgIndex = (currentImgIndex + 1) % imgs.length;
+        }
+
+        setInterval(showImage, 7000);
+    </script>
+</body>
+</html>
