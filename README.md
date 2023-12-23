@@ -1,4 +1,4 @@
-# Image Slider
+# IMAGE SLIDER 🎉
 ### Author - Hafsa Khan Lodhi
 Click Here to visit : https://hafsalodhi2023.github.io/image-slider<br><br>
 ## Clone Repository
