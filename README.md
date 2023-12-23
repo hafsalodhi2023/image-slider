@@ -1,7 +1,7 @@
 # IMAGE SLIDER 🎉
 ### Author - Hafsa Khan Lodhi
 Click Here to visit : https://hafsalodhi2023.github.io/image-slider<br><br>
-## Clone Repository
+## Clone Repository ✌
 ### Step 1: Install Git (if not already installed)
 Make sure you have Git installed on your machine. If not, download and install it from <a href="https://git-scm.com/" >Git's official website</a>.
 ### Step 2: Open Terminal or Command Prompt
